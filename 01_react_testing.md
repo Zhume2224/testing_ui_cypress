@@ -1,6 +1,6 @@
 # Testing React Components
 
-## Intro
+## Intro this is the course material for reference
 
 We will test in 2 ways:
 
