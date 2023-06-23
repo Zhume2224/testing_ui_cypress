@@ -1,0 +1,55 @@
+h1,
+h2 {
+  font-weight: normal;
+}
+
+.calculator {
+  background-color: #dedede;
+  border: 1px solid #dedede;
+  width: 20em;
+  height: 30em;
+  margin: 0 auto;
+  text-align: left;
+  border-radius: 5px;
+}
+
+.display {
+  padding: 15px;
+  margin: 15px;
+  text-align: right;
+  font-size: 1.5em;
+  background-color: #fefefe;
+  height: 1.2em;
+}
+
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.buttons button {
+  flex-grow: 1;
+  background-color:grey;
+  font-size: 1.1em;
+  color: white;
+  width: 3.5em;
+  height: 3.5em;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.butttons button .clear {
+  flex-grow: 0.5;
+}
+
+.one {
+  display: flex;
+  flex-grow: 1;
+}
+
+#hidden {
+  visibility: hidden;
+}
