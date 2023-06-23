@@ -1,28 +1,16 @@
 # Testing React Components
 
-**Lesson Duration**: 60 minutes
-
-### Learning Objectives
-
-### Learning Objectives
-
-- Understand what React Testing Library is and how to use it
-- Be able to unit test properties and methods.
-
 ## Intro
-
-Over the next 2 lessons we are going to learn how to test React components.
 
 We will test in 2 ways:
 
 - Unit testing - Test our components and functions work properly.
 - e2e testing - Test the full app to make sure it renders correctly in the browser.
 
-Testing in this way will increase confidence in the code that you write and for a lot of development teams it is a requirement. It also ensures that any changes made to the code won't break anything as the tests are normally ran before any build is released.
-
 ### Unit testing with React Testing Tools.
 
-We will be using a library called `React testing Library` for our unit tests. It can be used in conjunction with `Jest` to test API calls, mockups and UI components. (Note: that can also be used without Jest)
+We will be using a library called `React testing Library` for our unit tests. 
+It can be used in conjunction with `Jest` to test API calls, mockups and UI components. (Note: that can also be used without Jest)
 
 From Jest, we'll be using the methods:
 
@@ -36,10 +24,9 @@ From Jest, we'll be using the methods:
 
 React Testing Library is a DOM testing library, which means that instead of dealing with instances of rendered React components, it handles DOM elements and how they behave in front of real users.
 
-This will provide other methods which we'll see in the following section.
 
 
-## Creating our first test
+## Creating the first test
 
 > Download and open the start point and do an `npm install`. 
 >
@@ -113,38 +100,6 @@ describe('Counter', () => {
 
 Take a while to have a look at the code in the project. It is an application with a few moving parts that we will be testing. There is a counter with 2 buttons, a list of comments and a form to add a new comment. We will be testing the different components in slightly different ways to give you a broad overview of the testing strategies.
 
-Take a particular look at the `Counter.js` file in the `components` folder.
-
-## Knowing what to unit test
-
-The most common question about unit testing components is "what exactly should I test?"
-
-For unit testing we will test the methods that we have written and their effect on the data.
-
-For end to end testing we will test the events and the effect on what is rendered in the UI.
-
-We should always start here by identifying the business logic in our app.
-
-For `Counter.js` we will check:
-
-Unit Tests:
-
-- It should start the counter state at 0.
-- It should be able to increment and decrement the counter
-
-Accessing the elements we want to test. 
-
-In order to interact and test the elements of the component we need to assign test ids to any element we may want to interasct with. 
-
-Four Counter we will be interacting with the 2 buttons and also the `H1`. So we will assign these ids to those. We do this with a property called `data-testid`.
-
-```html
-<!-- Counter.js -->
-
-    <h1 data-testid="counter">{counter}</h1> // MODIFIED 
-    <button data-testid="button-up" onClick={incrementCounter}> Up</button>  // MODIFIED 
-    <button data-testid="button-down" onClick={decrementCounter}>Down</button>  // MODIFIED 
-```
 
 ## Setting up a unit test
 
