@@ -1,5 +1,5 @@
 
-## SETUP
+## SETUP & TERMINAL COMMANDS
 
 - To install project dependencies: `npm install`
 - To run the server: `npm start`
